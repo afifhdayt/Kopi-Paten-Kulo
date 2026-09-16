@@ -6,29 +6,96 @@
     <title>Kopi Paten Kulo - Website UMKM</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <main class="page">
-      <section class="hero">
+    <!-- Skip link -->
+    <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+
+    <!-- Header dan navigasi -->
+    <header class="site-header">
+      <nav class="nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html">Kopi Paten Kulo</a>
+
+        <ul>
+          <li>
+            <a aria-current="page" href="index.html">Beranda</a>
+          </li>
+          <li>
+            <a href="tentang.html">Tentang Kami</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main id="konten" class="page">
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
         <p class="eyebrow">UMKM Pekalongan Sragi</p>
-        <h1>Kopi Paten Kulo</h1>
-        <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
-        <button id="promoButton" type="button">Lihat promo hari ini</button>
+
+        <h1 id="hero-title">Kopi Paten Kulo</h1>
+
+        <p>
+          Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.
+        </p>
+
+        <button id="promoButton" type="button">
+          Lihat promo hari ini
+        </button>
+
       </section>
 
+      <!-- Produk -->
       <section aria-labelledby="produk-title">
         <h2 id="produk-title">Produk Best Seller</h2>
-        <ul class="products">
-          <li>Kopi Susu Original - Rp11.000</li>
-          <li>Kopi Susu Gula Aren - Rp12.000</li>
-        </ul>
+
+       <img
+  class="product-image"
+  src="assets/images/kopi.jpeg"
+  alt="Produk minuman kopi Kopi Paten Kulo"
+/>
+
+        <div class="product-list">
+          <article class="product-card">
+            <h3>Kopi Susu Original</h3>
+            <p>
+              Kopi susu dengan rasa klasik yang cocok untuk menemani aktivitas.
+            </p>
+            <p class="price">Rp11.000</p>
+          </article>
+
+          <article class="product-card">
+            <h3>Kopi Susu Gula Aren</h3>
+            <p>
+              Perpaduan kopi susu dengan manis gula aren yang nikmat.
+            </p>
+            <p class="price">Rp12.000</p>
+          </article>
+        </div>
       </section>
 
+      <!-- Lokasi dan jam buka -->
       <section aria-labelledby="info-title">
-  <h2 id="info-title">Lokasi & Jam Buka</h2>
-  <p><strong>Alamat:</strong> Sragi, Pekalongan</p>
-  <p><strong>Jam Buka:</strong> Senin - Minggu , 09.00 - 23.59 WIB</p>
-</section>
+        <h2 id="info-title">Lokasi & Jam Buka</h2>
+
+        <p><strong>Alamat:</strong> Sragi, Pekalongan</p>
+
+        <p>
+          <strong>Jam Buka:</strong>
+          Senin - Minggu, 09.00 - 23.59 WIB
+        </p>
+      </section>
+
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Kopi Paten Kulo. Semua hak dilindungi.
+      </p>
+    </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>
